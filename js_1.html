@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+    
+    let  name = prompt("Ваше имя?");
+    alert("Привет, " + name + "!");
+    
+    const year = 2020;
+    let yours = prompt("В каком году родился?");
+    alert("Тебе " + (year - yours) + " лет, старик)))");
+        
+    
+    let side = prompt("Введите длинну стороны квадрата");
+    alert("Периметр квадрата " + (4 * side));
+    
+    let rad = prompt("Введите радиус окружности");
+     s = 3.14 * rad ** 2;
+        alert("Площадь окружности "+ s);
+     
+      let l = prompt("Расстояние в км");
+      let t = prompt("Время в час");
+        s = l/t;
+             alert(s + " км/час");
+    
+        const euro = 0.84;
+        let usd = prompt("Сумма USD для обмена на EUR");
+        
+        cash = usd*euro;
+        alert(cash+" EUR");
+        
+        let gb = prompt("Введите объем флешки в Гб"); //взял за 1 гб 1024 мб
+        file = (gb *24)+ (Number(gb)*1000);
+        let nom = file/820;
+        let tru = ((Math.floor(nom)+" файл(ов) помещается, ")); 
+        alert(tru + ((file%820)+ " Мб свободного места на диске"));
+    
+//        
+        let dol = prompt("Наличка");
+        let choc = prompt("Стоимость шоколадки");
+        nom = Math.floor(dol/choc)
+        like = dol % choc;
+        alert(nom + " шоколадок, " + like + " грн сдача");
+        
+        
+            var x = prompt("Введите трехзначное число");
+            var y = 0;
+            for(; x; x = Math.floor(x / 10)) {
+                    y *= 10;
+                    y += x % 10;
+                    }
+                    alert(y);
+        
+        let non = prompt("Введите целое число");
+         ok = non % 2 == 0;
+        alert("Число четное "+ok);
+        
+        
+        
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
